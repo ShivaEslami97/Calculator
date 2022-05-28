@@ -1,0 +1,108 @@
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  width: 1410px;
+  max-width: 100%;
+}
+/* ---- ----*/
+.flex {
+  display: -ms-flexbox;
+  display: flex;
+
+  /* gap: var(--gap, 1rem); */
+}
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+.block {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+.align-items-center {
+  -ms-flex-align: center;
+  align-items: center;
+}
+.justify-content-center {
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.justify-content-between {
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+}
+.flex-d-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.position-absolute {
+  position: absolute;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.gap-15 {
+  gap: 1.5rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.gap-25 {
+  gap: 2.5rem;
+}
+.gap-3 {
+  gap: 3rem;
+}
+/* ---- ----*/
+.col {
+  width: 100%;
+}
+.col + .col {
+  margin-left: 3rem;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.pb-0 {
+  padding-bottom: 0;
+}
+.ml-0 {
+  margin-left: 0;
+}
+.mr-0 {
+  margin-left: 0;
+}
+.text-align-center {
+  text-align: center;
+}
+.animate1 {
+  -webkit-animation: up-down 1.5s infinite alternate;
+  animation: up-down 1.5s infinite alternate;
+}
+.animate2 {
+  -webkit-animation: up-down 2s infinite alternate;
+  animation: up-down 2s infinite alternate;
+}
+.animate3 {
+  -webkit-animation: left-right 1.5s infinite alternate;
+  animation: left-right 1.5s infinite alternate;
+}
+.animate-rotate {
+  -webkit-animation: rotation 20s infinite linear;
+  animation: rotation 20s infinite linear;
+}
+.animate-4 {
+  -webkit-animation: move 10s infinite linear;
+  animation: move 10s infinite linear;
+}
