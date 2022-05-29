@@ -10,65 +10,66 @@
 </head>
 
 <body>
-    <main class="main">
-        <div class="container">
-            <div class="app-wrapper">
-                <div class="phone">
-                    <div class="phone__notch"></div>
-                    <div class="phone__content">
-                        <div class="phone__header">
-                            <div class="notifications-bar flex">
-                                <div class="notifications-bar__left">
-                                    <span class="time">9:41</span>
-                                </div>
-                                <div class="notifications-bar__right flex">
-                                    <div class="signal"><i class="fa-solid fa-signal"></i></div>
-                                    <div class="wifi"><i class="fa-solid fa-wifi"></i></div>
-                                    <div class="battery"><i class="fa-solid fa-battery-full"></i></div>
-                                </div>
-
-                            </div>
-                            <div class="app-nav flex">
-                                <i class="mdi mdi-clock-outline"></i>
-                                <i class="mdi mdi-arrow-u-left-top"></i>
-                            </div>
+    <main class="main container">
+        <div class="app-wrapper">
+            <div class="theme-mode">
+                <i class="mdi mdi-moon-waning-crescent hidden"></i>
+                <i class="mdi mdi-white-balance-sunny"></i>
+            </div>
+            <div class="phone">
+                <div class="phone__notch"></div>
+                <div class="phone__header">
+                    <div class="notifications-bar flex">
+                        <div class="notifications-bar__left">
+                            <span class="time">9:41</span>
                         </div>
-                        <div class="phone__main">
-                            <div class="calc-display flex">
-                                <p id="displayCalc" class="calc-display__result">
-                                    <span id="num1">1200</span>
-                                    <span id="op"> +
-                                    </span><span id="num2">34</span>
-                                </p>
-                                <p class="calc-display__total" id="total">99,308</p>
-                            </div>
-                            <div class="calc-nums">
-                                <button class="btn btn__operator calc btn--green">AC</button>
-                                <button class="btn btn__operator calc btn--green">+/-</button>
-                                <button class="btn btn__operator calc btn--green">%</button>
-                                <button class="btn btn__operator calc btn--red">/</button>
-                                <button class="btn btn__num calc">7</button>
-                                <button class="btn calc">8</button>
-                                <button class="btn calc">9</button>
-                                <button class="btn btn__operator calc btn--red">✕</button>
-                                <button class="btn calc">4</button>
-                                <button class="btn calc">5</button>
-                                <button class="btn calc">6</button>
-                                <button class="btn btn__operator calc btn--red">—</button>
-                                <button class="btn calc">1</button>
-                                <button class="btn calc">2</button>
-                                <button class="btn calc">3</button>
-                                <button class="btn btn__operator calc btn--red">+</button>
-                                <button id="zero" class="btn calc">0</button>
-                                <button class="btn calc">.</button>
-                                <button class="btn btn__operator calc btn--red">=</button>
-                            </div>
+                        <div class="notifications-bar__right flex">
+                            <div class="signal"><i class="fa-solid fa-signal"></i></div>
+                            <div class="wifi"><i class="fa-solid fa-wifi"></i></div>
+                            <div class="battery"><i class="fa-solid fa-battery-full"></i></div>
                         </div>
+                    </div>
+                </div>
+                <div class="app-nav flex">
+                    <a href="#"><i class="mdi mdi-clock-outline"></i></a>
+                    <a href="#"><i class="mdi mdi-arrow-u-left-top"></i></a>
+                </div>
+                <div class="phone__main">
+                    <div class="calc-display flex">
+                        <p id="displayCalc" class="calc-display__result">
+                            <span class="calc-display__num1" id="num1">1200</span>
+                            <span class="calc-display__opt" id="op"> +
+                            </span>
+                            <span class="calc-display__num2" id="num2">34</span>
+                        </p>
+                        <p class="calc-display__total" id="total">99,308</p>
+                    </div>
+                    <div class="calc-nums">
+                        <button class="btn btn__operator btn--green">AC</button>
+                        <button class="btn btn__operator btn--green">+/-</button>
+                        <button class="btn btn__operator btn--green">%</button>
+                        <button class="btn btn__operator btn--red">/</button>
+                        <button class="btn btn__num">7</button>
+                        <button class="btn btn__num">8</button>
+                        <button class="btn btn__num">9</button>
+                        <button class="btn btn__operator btn--red">✕</button>
+                        <button class="btn btn__num">4</button>
+                        <button class="btn btn__num">5</button>
+                        <button class="btn btn__num">6</button>
+                        <button class="btn btn__operator btn--red">—</button>
+                        <button class="btn btn__num">1</button>
+                        <button class="btn btn__num">2</button>
+                        <button class="btn btn__num">3</button>
+                        <button class="btn btn__operator  btn--red">+</button>
+                        <button id="zero" class="btn btn__num">0</button>
+                        <button class="btn">.</button>
+                        <button class="btn btn__operator btn--red">=</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
