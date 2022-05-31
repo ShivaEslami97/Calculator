@@ -30,23 +30,27 @@
   -ms-flex-pack: center;
   justify-content: center;
   gap: 0.7rem;
-  -webkit-box-shadow: var(--box-shadow-btn);
-  box-shadow: var(--box-shadow-btn);
+  -webkit-box-shadow: inset 5px 5px 5px rgb(0 0 0 / 20%),
+    inset -5px -5px 15px rgb(255 255 255 / 10%), 5px 5px 15px rgb(0 0 0 / 30%),
+    -5px -5px 15px rgb(255 255 255 / 4%);
+  box-shadow: inset 5px 5px 5px rgb(0 0 0 / 20%),
+    inset -5px -5px 15px rgb(255 255 255 / 10%), 5px 5px 15px rgb(0 0 0 / 30%),
+    -5px -5px 15px rgb(255 255 255 / 4%);
   font-weight: var(--font-semi-bold);
   font-size: var(--font-size-2xl);
   background: var(--clr-btn-bg);
 }
-.btn--green {
-  color: var(--clr-primary-dk);
+.btn--style-1 {
+  color: var(--clr-primary);
 }
-.btn--red {
+.btn--style-2 {
   color: var(--clr-primary-2);
 }
 .btn:hover,
 .btn:active {
-  background: var(--clr-btn-bg-hover);
-  -webkit-box-shadow: var(--box-shadow-btn-hover);
-  box-shadow: var(--box-shadow-btn-hover);
+  background: linear-gradient(to right, #71567763, rgb(190 147 197 / 43%));
+  /* -webkit-box-shadow: var(--box-shadow-btn-hover);
+  box-shadow: var(--box-shadow-btn-hover); */
 }
 .btn__num:hover,
 .btn__num:active {

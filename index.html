@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="shortcut icon" href="images/icons8-calculator-120.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css">
     <link rel="stylesheet" href="css/layout.css">
 </head>
@@ -12,10 +13,6 @@
 <body>
     <main class="main container">
         <div class="app-wrapper">
-            <div class="theme-mode">
-                <i class="mdi mdi-moon-waning-crescent hidden"></i>
-                <i class="mdi mdi-white-balance-sunny"></i>
-            </div>
             <div class="phone">
                 <div class="phone__notch"></div>
                 <div class="phone__header">
@@ -32,38 +29,38 @@
                 </div>
                 <div class="app-nav flex">
                     <a href="#"><i class="mdi mdi-clock-outline"></i></a>
-                    <a href="#"><i class="mdi mdi-arrow-u-left-top"></i></a>
+                    <div class="theme-mode">
+                        <i class="bx bx-moon theme-mode--moon"></i>
+                        <i class="mdi mdi-white-balance-sunny theme-mode--sunny"></i>
+                    </div>
                 </div>
                 <div class="phone__main">
                     <div class="calc-display flex">
-                        <p id="displayCalc" class="calc-display__result">
-                            <span class="calc-display__num1" id="num1">1200</span>
-                            <span class="calc-display__opt" id="op"> +
-                            </span>
-                            <span class="calc-display__num2" id="num2">34</span>
-                        </p>
-                        <p class="calc-display__total" id="total">99,308</p>
+                        <p class="calc-display__total"></p>
+                        <p id="calcResult" class="calc-display__result"></p>
                     </div>
                     <div class="calc-nums">
-                        <button class="btn btn__operator btn--green">AC</button>
-                        <button class="btn btn__operator btn--green">+/-</button>
-                        <button class="btn btn__operator btn--green">%</button>
-                        <button class="btn btn__operator btn--red">/</button>
+                        <button id="clear" class="btn btn--style-1">AC</button>
+                        <button id="negation" class="btn btn--style-1">+/-</button>
+                        <button class="btn btn--style-1">%</button>
+                        <button class="btn btn__operator btn--style-2">/</button>
                         <button class="btn btn__num">7</button>
                         <button class="btn btn__num">8</button>
                         <button class="btn btn__num">9</button>
-                        <button class="btn btn__operator btn--red">✕</button>
+                        <button class="btn btn__operator btn--style-2">*</button>
                         <button class="btn btn__num">4</button>
                         <button class="btn btn__num">5</button>
                         <button class="btn btn__num">6</button>
-                        <button class="btn btn__operator btn--red">—</button>
+                        <button class="btn btn__operator btn--style-2">-</button>
                         <button class="btn btn__num">1</button>
                         <button class="btn btn__num">2</button>
                         <button class="btn btn__num">3</button>
-                        <button class="btn btn__operator  btn--red">+</button>
+                        <button class="btn btn__operator btn--style-2">+</button>
+                        <button id="del" class="btn btn__num">
+                            <i class="mdi mdi-arrow-u-left-top"></i></button>
+                        <button class="btn btn__num">.</button>
                         <button id="zero" class="btn btn__num">0</button>
-                        <button class="btn">.</button>
-                        <button class="btn btn__operator btn--red">=</button>
+                        <button id="equalTo" class="btn btn--style-2">=</button>
                     </div>
                 </div>
             </div>

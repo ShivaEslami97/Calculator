@@ -7,16 +7,19 @@
   --clr-bg: #fbfbfb;
   --clr-bg-bottom: var(--clr-bg);
   /* primary brand color */
-  --clr-primary: #578389;
-  --clr-primary-dk: #204e56;
-  --clr-primary-2: #e06765;
-  --clr-btn-bg: linear-gradient(145deg, #0002, #d4f5fb);
+  --clr-primary: #7a69c7;
+  --clr-primary-drk: #524175;
+  --clr-primary-2: #4568dc;
+  --clr-btn-bg: linear-gradient(145deg, #6865651f, #aad2da);
   --clr-btn-bg-hover: linear-gradient(145deg, #c2dcda, #f2fffe);
   --box-shadow-btn: -5px -5px 10px #fff9, 5px 5px 10px #0003;
   --box-shadow-btn-hover: rgb(76 78 100 / 22%) 0px 2px 10px 0px;
+  --clr-bg-theme-mode: linear-gradient(
+    to right,
+    rgb(99 111 164 / 46%),
+    #673ab74f
+  );
   /* -- border radius -- */
-  --border-radius-tiny: 0.12rem;
-  --border-radius-xs: 0.25rem;
   --border-radius-sm: 0.5rem;
   --border-radius-2sm: 0.8rem;
   --border-radius-md: 1rem;
@@ -61,12 +64,12 @@ html {
 
 body {
   font-size: 1.5rem;
-  background: linear-gradient(141deg, #fff 0%, #f7f7f7 51%, #f2f8f2 75%);
-  transition-delay: 1s;
+  transition: all 2s;
 }
 body.dark {
   --clr-base-dk: #fbfbfb;
-  --clr-base-dkr: #fbfbfb;
+  --clr-base-dkr: var(--clr-base-dk);
+  --clr-bg-theme-mode: linear-gradient(to right, rgb(179 166 201), #c9d2ed);
   --clr-bg: #191c22;
   --clr-btn-bg: linear-gradient(
     143deg,
